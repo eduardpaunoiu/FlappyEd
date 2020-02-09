@@ -1,0 +1,110 @@
+@keyframes slide{
+    from
+    {
+        background-position-x: 100%;
+    }
+   to
+   {
+       background-position-x: 0%;
+   }
+}
+@keyframes jump{
+   from
+   { transform: rotate(0deg);
+    bottom:0px;
+
+   }
+   10%
+   { transform: rotate(400deg);
+    bottom:300px;
+    
+ }
+50%
+{ transform: rotate(0deg);
+ bottom:0px;
+
+}
+to
+{ transform: rotate(0deg);
+ bottom:0px;
+
+}
+}  
+.imagine{
+    
+    width: 1500px;
+    height: 1000px;
+    background: url("background.png");
+    position: relative;
+   
+    animation-name: slide;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.score{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    color:#DECADE;
+    font-style: oblique;
+    margin: 0 auto;
+}
+.squary{
+    transition: 1s all;
+    height: 350px;
+    width: 378px;
+    bottom: 0;
+    background-image: url(eddy.png);
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left:100px;
+}
+.scena
+{
+    height: 100px;
+    width: 1500px;
+    background-color: #66aa55;
+    margin-top:880px;
+   
+   
+}
+button{
+font-size: 50px;
+width: 150px;
+background-color:#02ac1e;
+border-radius: 50%;
+margin: 0 auto;
+
+
+ }
+ .butoane{
+    
+     margin: 0 auto;
+    
+ }
+ button:hover{
+     background-color: #59a27a;
+ }
+ .capSus{
+    transform: rotate(400deg);
+    bottom:800px;
+    
+ }
+
+.obstacol{
+    width: 250px;
+    height: 150px;
+    background-color: #a52a2a;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transition: 2s all linear;
+
+}
+.obstacolStanga{
+    right:100%;
+}
+
+
